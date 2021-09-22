@@ -11,7 +11,7 @@
 		"wiki": "https://aimeos.org/docs"
 	},
 	"provide": {
-		"aimeos/aimeos-core": "dev-master || 2021.07.2"
+		"aimeos/aimeos-core": "dev-master || dev-kbs24 || 2021.07.*"
 	},
 	"prefer-stable": true,
 	"minimum-stability": "dev",
