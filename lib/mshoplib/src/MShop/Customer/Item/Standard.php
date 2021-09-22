@@ -164,6 +164,17 @@ class Standard extends Base implements Iface
 		return $this->set( 'customer.password', $value );
 	}
 
+    /**
+     * Verifies a given password to the current one
+     *
+     * @param string $value
+     * @return bool
+     */
+	public function verifyPassword( string $value ) : bool
+    {
+        return password_verify( $value, $this->getPassword());
+    }
+
 
 	/**
 	 * Returns the last verification date of the customer.
